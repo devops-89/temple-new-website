@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
+import Temple2 from '../assets/Images/temple2.png'
 import Temple from '../assets/Images/templeImg.jpg'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
@@ -43,43 +44,9 @@ const cards = [
 ];
 
 
-const slides = [
-  {
-    year: 1897,
-    text1: "Shri Sankat Mochan Dham was founded by devoted saints who envisioned a sacred space where people could seek spiritual guidance and peace. In its early days, the temple was modest in size, yet it immediately became a beacon of devotion, drawing those who wished to connect with the divine and practice their faith with sincerity. The foundation laid during this year marked the beginning of a journey that would span generations, nurturing devotion, service, and community spirit...",
-  },
-  {
-    year: 1921,
-    text1: "By this time, the number of devotees visiting the temple had grown significantly. Recognizing the need for a larger space and improved facilities, the first major renovation was undertaken. The temple expanded to accommodate more worshippers, and new areas were created for meditation, religious teachings, and gatherings. This expansion allowed the temple to become not only a place of worship but also a center for cultural and spiritual education, strengthening its role in the lives of the community...",
-  },
-  {
-    year: 1957,
-    text1: "Shri Sankat Mochan Dham emerged as a central hub for festivals, celebrations, and community gatherings. Special poojas, kirtans, and devotional events were organized on a larger scale, bringing together devotees from surrounding regions. These celebrations fostered a strong sense of unity and devotion among the community, making the temple a focal point for spiritual and social life....",
-  },
-  {
-    year: 1995,
-    text1: "Recognizing the need for deeper spiritual engagement, a new ashram and meditation hall were constructed. This provided devotees with a serene environment for retreats, yoga, meditation, and satsangs. The new facilities allowed visitors to immerse themselves fully in spiritual practices and personal reflection, enhancing their connection with Lord Hanuman Ji and strengthening the temple’s role as a center of inner growth and learning.",
-  },
-  {
-    year: 2010,
-    text1: "Modernization efforts were undertaken to make the temple more accessible and comfortable for all devotees while preserving its traditional charm. Facilities were upgraded, pathways improved, and the overall infrastructure enhanced to support both daily worship and large-scale events. These improvements ensured that Shri Sankat Mochan Dham could continue its mission of devotion, service, and community engagement, welcoming new generations of devotees and visitors....",
-  },
-];
 
 const AboutPage = () => {
-  const [index, setIndex] = useState(0);
-  const [direction, setDirection] = useState("right");
-
-  const prevSlide = () => {
-    setDirection("left");
-    setIndex(index === 0 ? slides.length - 1 : index - 1);
-  };
-
-  const nextSlide = () => {
-    setDirection("right");
-    setIndex(index === slides.length - 1 ? 0 : index + 1);
-  };
-
+  
   return (
     <div>
       <Header />
@@ -121,60 +88,30 @@ const AboutPage = () => {
       <Container className="mt-5 mb-5">
         <Row>
           <Col md={6}>
-            <p className="fw-bold text-danger">HISTORY</p>
-            <h2 className="fw-bold" style={{fontSize:"3em"}}>A Brief History of Shri Sankat Mochan Dham</h2>
+            <h2 className="fw-bold" style={{fontSize:"3em"}}>About Edmonton Mandir</h2>
+            <p style={{color:"grey"}}>Edmonton Mandir is a vibrant spiritual center, dedicated to promoting Hindu culture, traditions, and values. We provide a welcoming space for worship, community gatherings, and cultural celebrations, uniting people of all backgrounds in devotion and harmony.
+<br/><br/>
+<b>Praise & Worship</b>
+<br/>
+Join us for daily aarti and bhajans, offering prayers and devotion to various Hindu deities in a serene and uplifting atmosphere.
+<br/><br/>
+<b>Hindus celebrate</b><br/>
 
+We joyfully celebrate important Hindu festivals and special occasions, bringing the community together to preserve and pass on our rich traditions.
+<br/><br/>
+<b>Prayers</b><br/>
+
+Participate in daily and special prayers to seek blessings, peace, and spiritual growth for you and your family.</p>
             
-            <div className={`slide-box slide-${direction}`} >
-              <h5 style={{color:'black'}}>{slides[index].year}</h5>
-              <p style={{color:'grey'}}>{slides[index].text1}</p>
-            </div>
-
-            <div className="d-flex gap-2 mt-3">
-              <button className="btn slide-btn" onClick={prevSlide}>←</button>
-              <button className="btn slide-btn" onClick={nextSlide}>→</button>
-            </div>
+           
           </Col>
           <Col md={6} className='mb-5'>
-            <img src={Temple} alt="Temple" className="img-fluid rounded" />
+            <img src={Temple2} alt="Temple" className="img-fluid rounded" />
           </Col>
         </Row>
-        <Row>
-
-        </Row>
+        
       </Container>
-        <Container fluid >
-          <Row className='text-center py-5 mb-5' style={{backgroundColor:"#4b1e3d"}}>
-            <Col className='mx-3 p-5'>
-              <GrYoga size={100} className="text-danger mb-2"/>
-              <h2 className="fw-bold">
-                <CountUp start={1} end={25} duration={5} style={{color:"#fff",fontSize:"1.5em"}} />
-              </h2>
-              <p style={{fontSize:"1.5em",color:"rgb(245, 122, 122)",fontWeight:"bold"}}>Yoga Teachers</p>
-            </Col>
-            <Col className='mx-3 p-5'>
-              <MdOutlineVolunteerActivism size={100} className="text-danger mb-2"/>
-              <h2 className="fw-bold">
-                <CountUp start={1} end={15} duration={5} style={{color:"#fff",fontSize:"1.5em"}} />
-              </h2>
-              <p style={{fontSize:"1.5em",color:"rgb(245, 122, 122)",fontWeight:"bold"}}>Volunteers</p>
-            </Col>
-            <Col className='mx-3 p-5'>
-            <BiSupport size={100} className="text-danger mb-2" />
-              <h2 className="fw-bold">
-                <CountUp start={1} end={12} duration={5} style={{color:"#fff",fontSize:"1.5em"}} />
-              </h2>
-              <p style={{fontSize:"1.5em",color:"rgb(245, 122, 122)",fontWeight:"bold"}}>Support Groups</p>
-            </Col>
-            <Col className='mx-3 p-5'>
-              <MdFolderSpecial size={100} className="text-danger mb-2" />
-              <h2 className="fw-bold">
-                <CountUp start={1} end={8} duration={5} style={{color:"#fff",fontSize:"1.5em"}} />
-              </h2>
-              <p style={{fontSize:"1.5em",color:"rgb(245, 122, 122)",fontWeight:"bold"}}>Special Events</p>
-            </Col>
-          </Row>
-        </Container>
+       
         <Container>
           <Row>
             <Col md={12} sm={12} className='text-center mt-5'>
@@ -230,64 +167,6 @@ const AboutPage = () => {
           </Row>
         </Container>
        
-<Container className="mt-5 mb-5">
-  <Row className="text-center mb-4">
-    <Col>
-      <p style={{color:"rgb(245, 122, 122)", letterSpacing:"5px"}}>TESTIMONIALS</p>
-      <h2 style={{fontWeight:"bold", fontSize:"2.5em"}}>What People Say About Our Temple</h2>
-    </Col>
-  </Row>
-  <Row className="g-4">
-    <Col md={4}>
-      <Card className="h-100 text-center p-4 shadow-sm">
-        <div style={{fontSize:"2em", color:"rgb(245, 122, 122)"}}>“</div>
-        <Card.Body>
-          <Card.Text style={{color:"grey"}}>
-            "Visiting Shri Sankat Mochan Dham has been a life-changing experience. The serene atmosphere and the devotion here help me find peace and strength every time I come."
-          </Card.Text>
-          <Card.Img 
-            variant="bottom" 
-            src={Image1} 
-            style={{width:"60px", height:"60px", borderRadius:"50%", margin:"10px auto"}} 
-          />
-          <Card.Title className="mt-2">Rajesh Kumar</Card.Title>
-        </Card.Body>
-      </Card>
-    </Col>
-    <Col md={4}>
-      <Card className="h-100 text-center p-4 shadow-sm">
-        <div style={{fontSize:"2em", color:"rgb(245, 122, 122)"}}>“</div>
-        <Card.Body>
-          <Card.Text style={{color:"grey"}}>
-            "The temple staff and volunteers are so welcoming. Participating in the meditation and yoga sessions has helped me feel spiritually connected and more centered in my daily life."
-          </Card.Text>
-          <Card.Img 
-            variant="bottom" 
-            src={Image2} 
-            style={{width:"60px", height:"60px", borderRadius:"50%", margin:"10px auto"}} 
-          />
-          <Card.Title className="mt-2">Anjali Verma</Card.Title>
-        </Card.Body>
-      </Card>
-    </Col>
-    <Col md={4}>
-      <Card className="h-100 text-center p-4 shadow-sm">
-        <div style={{fontSize:"2em", color:"rgb(245, 122, 122)"}}>“</div>
-        <Card.Body>
-          <Card.Text style={{color:"grey"}}>
-            "I have attended several festivals here, and each time I feel the love, energy, and blessings of Lord Hanuman Ji. This temple truly brings the community together in faith."
-          </Card.Text>
-          <Card.Img 
-            variant="bottom" 
-            src={Image3} 
-            style={{width:"60px", height:"60px", borderRadius:"50%", margin:"10px auto"}} 
-          />
-          <Card.Title className="mt-2">Sunil Sharma</Card.Title>
-        </Card.Body>
-      </Card>
-    </Col>
-  </Row>
-</Container>
 
       <Footer />
     </div>

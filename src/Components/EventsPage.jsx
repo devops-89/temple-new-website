@@ -10,31 +10,35 @@ const events = [
     id: 1,
     date: "24",
     month: "Nov",
-    title: "Yoga & Meditation Workshop  ",
-    time: "9:30 am to 7:00 pm",
+    title:  "Nag panchami",
+    paragraph:"Nag Panchami is a traditional Hindu festival dedicated to the worship of snakes or serpents, known a...",
+    time: "10:00 AM - 02:00 PM",
     image:Event1,
   },
   {
     id: 2,
     date: "24",
     month: "Nov",
-    title: "Sankat Mochan Pooja",
-    time: "10:00 am to 5:00 pm",
+    title: "Krishna Janmashtami",
+    paragraph:"Krishna Janmashtami is an annual Hindu festival that celebrates the birth of Lord Krishna, the eight...",
+    time: "06:00 PM - 12:00 AM",
     image:Event2,
   },
   {
     id: 3,
     date: "23",
     month: "Dec",
-    title: "Spiritual Retreat Weekend",
-    time: "12:00 am to 11:59 pm",
+    title: "Ganesh Chaturthi",
+    paragraph:"Ganesh Chaturthi is a vibrant Hindu festival celebrating the birth of Lord Ganesha, the elephant-hea...",
+    time: "06:00 PM - 12:00 AM",
     image:Event3,
   },
   {
     id: 4,
     date: "23",
     month: "Dec",
-    title: "Cultural Festival Celebration",
+    title: "Dussehra",
+    paragraph:"Dussehra, also known as Vijayadashami, is a vibrant and significant Hindu festival celebrated with i...",
     time: "9:00 am to 04:30 pm",
     image:Event4,
   }
@@ -83,11 +87,12 @@ const EventsPage = () => {
                   </div>
                   <div style={{marginLeft:"70px"}}>
                     <h5>{event.title}</h5>
+                    <p style={{color:"grey"}}>{event.paragraph}</p>
                   <p className="event-time">From {event.time}</p>
                 </div>
               </div>
                 <Button variant="danger" className="rounded-pill px-4">
-                  Info
+                  View Details
                 </Button>
               </Card.Body>
             </Card>

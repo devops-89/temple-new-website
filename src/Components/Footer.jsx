@@ -50,25 +50,21 @@ const Footer = () => {
         </Container>
       </section>
       <footer className="footer text-center">
-        <Nav className="justify-content-center footer-nav">
+        <Nav className="justify-content-center footer-nav gap-5">
           <Link className='nav-link' to="/" >
             Home
           </Link>
-          <Link className='nav-link' to="/featuresPage">
-            Features
+          <Link className='nav-link' to="/services">
+            Services
             </Link>
-          <Link className="nav-link" to="/">Programs</Link>
-          <Link className='nav-link' to="/eventsInnerPage">
+          <Link className='nav-link' to="/events">
                         Events
                       </Link> 
           <Link className="nav-link" to="/">VIHARA</Link>
-          <Link className='nav-link' to="/donationsPage">
+          <Link className='nav-link' to="/donations">
                         Donations
                       </Link>
-          <Link className='nav-link' to="/news">
-                        News
-                      </Link>
-          <Link className='nav-link' to="/aboutPage">
+          <Link className='nav-link' to="/about">
                         About
                       </Link>
           <Link className='nav-link' to="/contacts">

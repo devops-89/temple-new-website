@@ -17,69 +17,42 @@ import Image7 from '../assets/Images/event7.jpg';
 const events = [
   {
     id: 1,
-    date: "18",
+    date: "24",
     month: "Nov",
-    title: "Yoga & Meditation Workshop ",
-    time: "7:30 am to 12:00 pm",
+    title:  "Nag panchami",
+    paragraph:"Nag Panchami is a traditional Hindu festival dedicated to the worship of snakes or serpents, known a...",
+    time: "10:00 AM - 02:00 PM",
     image:Image1,
   },
   {
     id: 2,
-    date: "18",
+    date: "24",
     month: "Nov",
-    title: "Sankat Mochan Pooja",
-    time: "8:00 am to 5:00 pm",
+    title: "Krishna Janmashtami",
+    paragraph:"Krishna Janmashtami is an annual Hindu festival that celebrates the birth of Lord Krishna, the eight...",
+    time: "06:00 PM - 12:00 AM",
     image:Image2,
   },
   {
     id: 3,
-    date: "19",
-    month: "Nov",
-    title: "Spiritual Retreat Weekend",
-    time: "7:30 am to 4:30 pm",
+    date: "23",
+    month: "Dec",
+    title: "Ganesh Chaturthi",
+    paragraph:"Ganesh Chaturthi is a vibrant Hindu festival celebrating the birth of Lord Ganesha, the elephant-hea...",
+    time: "06:00 PM - 12:00 AM",
     image:Image3,
   },
   {
     id: 4,
-    date: "24",
-    month: "Nov",
-    title: "Cultural Festival Celebration",
-    time: "6:00 am to 6:00 pm",
+    date: "23",
+    month: "Dec",
+    title: "Dussehra",
+    paragraph:"Dussehra, also known as Vijayadashami, is a vibrant and significant Hindu festival celebrated with i...",
+    time: "9:00 am to 04:30 pm",
     image:Image4,
-  },
-  {
-    id:5,
-    date:24,
-    month:"Nov",
-    title:"Anniversary Prayers & Community Feast",
-    time:"8:00 am to 5:00 pm",
-    image:Image5
-  },
-  {
-    id:6,
-    date:24,
-    month:"Nov",
-    title:"Ramayana Recitation Week",
-    time:"9:30 am to 7:00 pm",
-    image:Image6
-  },
-  {
-    id:7,
-    date:24,
-    month:"Nov",
-    title:"Anniversary Prayers & Community Feast",
-    time:"10:00 am to 5:00 pm",
-    image:Image7
-  },
-  {
-    id:8,
-    date:25,
-    month:"Nov",
-    title:"India: Unravel the Most Amazing Spots",
-    time:"8:00 am to 5:00 pm",
-    image:Image4
-  },
+  }
 ];
+
 const EventsInnerPage = () => {
   return (
     <div>
@@ -110,7 +83,7 @@ const EventsInnerPage = () => {
               </Row>
             <Row data-aos="fade-up"> 
               {events.map((event) => (
-                <Col md={12} key={event.id} className="mb-4">
+                <Col sm={12} md={12} key={event.id} className="mb-4">
                   <Card className="d-flex flex-row shadow-sm event-card-container" style={{width:"80%",height:"90%",marginLeft:"10%"}}>
                     <Card.Img
                       variant="left"
@@ -141,6 +114,7 @@ const EventsInnerPage = () => {
                         </div>
                         <div style={{marginLeft:"70px"}}>
                           <h5>{event.title}</h5>
+                          <p style={{color:"grey"}}>{event.paragraph}</p>
                           <p className="event-time">From {event.time}</p>
                         </div>
                         </div>

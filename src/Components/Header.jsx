@@ -10,17 +10,17 @@ const Header = () => {
       <Container>
         <Navbar.Toggle aria-controls="navbar-nav" className="me-auto" style={{backgroundColor:"#fff"}}/>
         <Navbar.Collapse id="navbar-nav">
-          <Nav className="text-center me-5">
+          <Nav className="text-center mx-auto">
             
             <Link className='nav-link' to="/" >
               Home
             </Link>
 
-            <Link className='nav-link' to="/featuresPage">
+            <Link className='nav-link' to="/services">
               Services
             </Link>
 
-            <Link className='nav-link' to="/aboutPage">
+            <Link className='nav-link' to="/about">
               About
             </Link>
 
@@ -33,10 +33,10 @@ const Header = () => {
               </span>
             </Navbar.Brand>
             
-            <Link className='nav-link' to="/eventsInnerPage">
+            <Link className='nav-link' to="/events">
               Events
             </Link>
-            <Link className='nav-link' to="/donationsPage">
+            <Link className='nav-link' to="/donations">
               Donations
             </Link>
             

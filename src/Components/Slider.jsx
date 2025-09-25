@@ -9,13 +9,12 @@ import Img2 from '../assets/Images/drumming.jpg';
 const slides = [
   {
     img: Img1,
-    title: "Three Things Cannot Be Long Hidden",
-    subtitle: "The Sun, The Moon, and The Truth",
+    title: "A Place For Peace And Worship",
+    subtitle: "Welcome to a sacred haven devoted to Prabhu Darshan, spiritual growth, and cultural gatherings for all generations and backgrounds in Alberta",
   },
   {
     img: Img2,
-    title: "No One Saves Us But Ourselves",
-    subtitle: "We Ourselves Must Walk The Path",
+    title: "Ancient Wisdom, Modern Understanding "
   },
 ];
 

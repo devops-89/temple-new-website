@@ -1,25 +1,24 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import Icon from "../assets/Images/react-icons.svg";
+import Pandit1 from '../assets/Images/pandit1.png'
+import Pandit2 from '../assets/Images/pandit2.png'
+import Pandit3 from '../assets/Images/Pandit3.png'
 
 const cards = [
   {
-    img: Icon,
-    heading: "Ashram",
+    img: Pandit1,
+    heading: "Pandit Pankaj Dixit",
     paragraph:
-      "Our Ashram is a peaceful space for meditation, learning, and spiritual growth. It is open to all who wish to spend time in prayer, reflection, or seva (selfless service). The Ashram also hosts satsangs, yoga sessions, and spiritual teachings that guide devotees toward a balanced and meaningful life.",
+      "Pandit Pankaj Dixit began practicing as a priest over 10 years ago. He holds a First Class Masters Degree in Sanskrit and Art History from The National Museum, New Delhi, India.",
   },
   {
-    img: Icon,
-    heading: "Get Involved",
-    paragraph:
-      "Be a part of our temple family by joining in seva and community activities. From helping during festivals and daily rituals to volunteering in cultural or social programs, every small effort brings great blessings. Together, we can keep the spirit of devotion, service, and unity alive.",
+    img: Pandit2,
+    heading: "Pandit Laxman Sharma",
+    
   },
   {
-    img: Icon,
-    heading: "Donation",
-    paragraph:
-      "Your kind contributions help us maintain the temple, organize festivals, and support charitable work like education, food distribution, and health care for those in need. Every donation, big or small, is a step towards spreading love, faith, and service. Contribute with devotion and be blessed by Lord Hanuman Ji’s grace.",
+    img:Pandit3 ,
+    heading: "Pandit Rajesh Jha",
   },
 ];
 
@@ -31,23 +30,14 @@ const About = () => {
           <Col md={6} sm={12} data-aos="fade-right">
             <p className="fs-6" style={{color:"Tomato",letterSpacing:"5px"}}>Welcome</p>
             <h2 className="fs-1 fw-bold">
-              Experience Yoga at Our Shri Sankat Mochan Dham
+              Hinduism: A Diverse and Evolving Religious Mainstream
             </h2>
           </Col>
           <Col md={6} sm={12} data-aos="fade-left" className="fs-5">
             <p style={{color:"grey"}}>
-              Welcome to Shri Sankat Mochan Dham, a holy place where faith, devotion, 
-              and peace come together. 
-              Our temple is a guiding light for devotees, 
-              helping them receive blessings and find inner peace.
+              Hinduism refers to a religious mainstream which evolved organically and spread over a large territory marked by significant ethnic and cultural diversity. This mainstream evolved both by innovation from within, and by assimilation of external traditions or cults into the Hindu fold. The result is an enormous variety of religious traditions, ranging from innumerable small, unsophisticated cults to major religious movements with millions of adherents spread over the entire subcontinent.
             </p>
-            <p style={{color:"grey"}}>
-              The temple is not just a place to pray—it is also a home for cultural, spiritual, and social activities. Every prayer, every ritual, 
-              and every festival celebrated here shows the values of unity, service, and devotion.
-              This dham is dedicated to Lord Hanuman Ji, who is known as the remover of difficulties and the symbol of strength and devotion. 
-              The peaceful environment, the sound of prayers, 
-              and the light of diyas make everyone feel connected to the divine.
-            </p>
+            
           </Col>
         </Row>
 
@@ -59,7 +49,7 @@ const About = () => {
               <Card.Img
                 variant="top"
                 src={card.img}
-                style={{ width: "20%", margin: "10% auto"}}
+                style={{ width: "50%",borderRadius:"50%", margin: "10% auto"}}
               />
               <Card.Body>
                 <Card.Title className="fw-bold main-head">{card.heading}</Card.Title>

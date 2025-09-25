@@ -7,35 +7,67 @@ import { Link } from 'react-router-dom'
 
 const packages = [
   {
-    title: "INSTALLATION + LOGO CHANGE",
+    title: "Marriage Ceremony",
     price: "$45",
     features: [
-      "The template will be installed to your server to look like in our online demo. Access to Admin panel will be granted to you to manage your website",
-      "We will replace the template’s logo with yours on each page of the template. The logo has to be in good quality in .PSD, .EPS, .PNG, .JPG format. Logo width should be 300px and 600px"
+      "A Hindu marriage is not merely a social contract but a sacred union of two souls, symbolizing the beginning of the Grihasthashrama (householder stage of life)."
     ]
   },
   {
-    title: "READY-TO-USE WEBSITE",
+    title: "Greh Pravesh Pooja",
     price: "$469",
     features: [
-      "Theme installation on your server with your logo",
-      "Google map with your address set",
-      "Replacing content and images up to 6 pages (without layout change)",
-      "Removing some elements that you do not need on your website",
-      "Social icons set (without changing theme’s layout)",
-      "Replacement of color scheme"
+      "This is a Hindu ceremony performed to purify and bless a new home before moving in. It involves various rituals to remove negative energies, invite positive energy, and ensure prosperity."
+      
     ]
   },
   {
-    title: "FULL WEBSITE PACKAGE",
+    title: "Mundan Ceremony",
     price: "$699",
     features: [
-      "WordPress and theme installation",
-      "Customization of website branding",
-      "Content Development (15 royalty-free images)",
-      "Content setup (adding 6 pages, 6 posts, Revolution sliders)",
-      "SEO Essentials",
-      "Website speed optimization"
+      "The Mundan ceremony is a traditional Hindu ritual involving the first shaving of a child's head, typically performed between the first and third year. It is believed to purify the child by shedding past karma, promote intellectual development."
+    ]
+  },
+  {
+    title: "Pooja Under One Hour",
+    price: "$699",
+    features: [
+      "This refers to a concise and efficient Hindu worship ceremony designed to be completed within a short timeframe, typically under an hour. It focuses on essential prayers, offerings (like a lit diya, incense, and a few flowers), and devotional practices to connect with the divine."
+    ]
+  },
+  {
+    title: "Pooja Over One Hour",
+    price: "$699",
+    features: [
+      "A Pooja over one hour refers to more elaborate and extensive Hindu worship ceremonies that typically last longer than an hour, sometimes extending for several hours or even an entire day, depending on their complexity and purpose."
+    ]
+  },
+  {
+    title: "funeral service",
+    price: "$699",
+    features: [
+      "A funeral service is a ceremonial event held to honor and remember a deceased person, marking their passing and supporting the bereaved. It typically involves rituals, prayers, readings, eulogies, and music, culminating in the final disposition of the body (burial or cremation)."
+    ]
+  },
+  {
+    title: "kriya karam puja final day",
+    price: "$699",
+    features: [
+      "The final day of Kriya Karam Puja, independent of any reference to the Garuda Purana, typically involves rituals centered on bidding a peaceful farewell to the departed soul. It focuses on offerings and prayers for the soul's journey and purification."
+    ]
+  },
+  {
+    title: "kriya karam in 4 days with garud puran",
+    price: "$699",
+    features: [
+      "Kriya Karam over four days, incorporating the Garuda Purana, begins with cremation. Days two and three involve collecting ashes and initial offerings, with the Purana's recitation guiding the soul's journey."
+    ]
+  },
+  {
+    title: "kriya karam in 4 days with garud puran",
+    price: "$699",
+    features: [
+      "A 10-day Garuda Purana Puja is a comprehensive Hindu ritual for the deceased. It involves daily Pind Daan and continuous recitation of the Garuda Purana, aiming to guide the departed soul through its post-death journey."
     ]
   }
 ];
@@ -51,32 +83,21 @@ const FeaturesPage = () => {
           <Col sm={12} xs={12} md={12}>
             <div className="banner text-center mb-5">
               <img src={Temple} alt="Temple" className="img-fluid w-100" />
-              <h1 className="fw-bold text-white">Our Features</h1>
+              <h1 className="fw-bold text-white">Services</h1>
               <ul className='list-unstyled d-flex gap-4'>
                 <li><Link className='nav-link' to="/">Home</Link></li>
                 <li>/</li>
-                <li><Link className='nav-link' to="/featuresPage">Our Features</Link></li>
+                <li><Link className='nav-link' to="/featuresPage">Services</Link></li>
               </ul>
             </div>
           </Col>
         </Row>
       </Container>
         <Container>
-            <Row>
-                <Col md={12} sm={12}>
-                <h2>Dear Customers,</h2>
-                <p style={{color:"grey"}}>
-                Our primary goal is developing a secure and customizable theme framework that meets the needs of the end user. 
-                Therefore, our customers are able to create websites using our templates as easy as 1-2-3! This process requires minimum knowledge of WordPress and coding, and extended documentation and our Support Team is always at your service. However, we ask you to keep in mind that sometimes issues occur not because of templates malfunction. There might be situations when it doesn’t depend on us and the framework. For example, server settings, some extra functional that requires deep file customization, or additional plugins usage. And of course, an attempt to build a website in a very short time. We know our theme framework perfectly and have a highly-professional team of developers. They will help you develop the website you need. 
-                If you need website customization, contact our support system for further information:
-                <Link className='nav-link' to="/contacts">https://themerex.net/support/</Link>
-                </p>
-                </Col>
-            </Row>
+
             <Row>
                 <Col md={12} sm={12} className='text-center'>
-                    <p style={{ color: "rgb(245, 122, 122)", letterSpacing: "5px" }}>CUSTOMIZATION</p>
-                    <h2 style={{ fontWeight: "bold", fontSize: "2.5em" }}>Packages</h2>
+                    <h2 style={{ fontWeight: "bold", fontSize: "2.5em" }}>Services</h2>
                 </Col>
             </Row>
 
@@ -89,13 +110,13 @@ const FeaturesPage = () => {
           <Card.Title style={{ fontWeight: "bold", fontSize: "1.50em",color:"#fff" }}>{pkg.title}</Card.Title>
           <h3 style={{ color: "rgb(245, 122, 122)", fontWeight: "bold" }}>{pkg.price}</h3>
           <Card.Body>
-            <ul className="text-start" style={{ color: "#fff", paddingLeft: "0"}}>
+            <ul className="text-start list-unstyled" style={{ color: "#fff", paddingLeft: "0"}}>
               {pkg.features.map((feature, i) => (
                 <li key={i} style={{ marginBottom: "10px" }}> {feature}</li>
               ))}
             </ul>
           </Card.Body>
-          <button className="btn btn-danger mt-auto">Grab This Deal</button>
+          <button className="btn btn-danger mt-auto">Make a Request</button>
         </Card>
       </Col>
     ))}

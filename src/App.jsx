@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Slider from "./Components/Slider.jsx";
 import About from "./Components/About";
-import Programs from "./Components/Programs";
 import Events from "./Components/Events";
 import EventsPage from "./Components/EventsPage";
 import Donations from "./Components/Donations.jsx";
@@ -35,7 +34,6 @@ function App() {
             <>
               <Slider />
               <About />
-              <Programs />
               <Events />
               <EventsPage />
               <Donations />
@@ -44,14 +42,14 @@ function App() {
           }
         />
         <Route path="/about" element={<About />} />
-        <Route path="/featuresPage" element={<FeaturesPage />} />
+        <Route path="/services" element={<FeaturesPage />} />
         {/* <Route path="/shopPage" element={<ShopPage />} /> */}
         <Route path="/events" element={<EventsPage />} />
-        <Route path="/donationsPage" element={<DonationsPage />} />
+        <Route path="/donations" element={<DonationsPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
         <Route path="/news" element={<NewsPage />} />
-        <Route path="/eventsInnerPage" element={<EventsInnerPage/>}/>
-        <Route path="/aboutPage" element={<AboutPage/>}/>
+        <Route path="/events" element={<EventsInnerPage/>}/>
+        <Route path="/about" element={<AboutPage/>}/>
       </Routes>
     </Router>
   );

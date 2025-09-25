@@ -8,6 +8,11 @@ const Events = () => {
     <section className="events-section" id="events">
       <Container fluid>
         <Row>
+          <Col sm={12} md={12} className="text-center mb-4 ">
+          <h2 className="fw-bold">Find Out How, We Worship We Hope to See You Soon!</h2>
+          </Col>
+        </Row>
+        <Row>
         <Col md={6}>
         <div className="event-img">
           <div

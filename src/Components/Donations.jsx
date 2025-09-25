@@ -7,24 +7,12 @@ const Donations = () => {
       <Row>
         <Col sm={12} md={6} data-aos="fade-right">
           <h6 className="text-danger fw-bold" style={{letterSpacing:"10px"}}>DONATIONS</h6>
-          <h2 className="fw-bold fs-1">Dakshina: Yoga’s Practice of “Giving Back”</h2>
+          <h2 className="fw-bold fs-1">Donate Us To Help</h2>
           <p style={{color:"grey"}}>
-            At Shri Sankat Mochan Dham, we honor the sacred tradition of Dakshina—the practice of offering with gratitude, love, and devotion. Just as yoga teaches harmony of the body and mind, 
-            Dakshina helps balance the spirit by sharing blessings and supporting the community.
+            Your generous donations help us preserve the temple’s sacred environment, organize festivals, and support community services like free meals, yoga sessions, and spiritual programs. Every contribution, big or small, becomes an offering of love and devotion. By donating, you are not only serving the temple but also uplifting countless lives. 
+            Together, let us keep the flame of faith, service, and spirituality burning bright.
           </p>
-          <p style={{color:"grey"}}>
-            <b>By contributing your Dakshina, <br/>you help:</b>
-
-            <br/>Maintain the Temple: Ensure the temple remains clean, welcoming, and spiritually uplifting for all devotees.
-
-            <br/>Support Spiritual Programs: Fund meditation sessions, yoga classes, retreats, and workshops that guide people on their spiritual path.
-
-            <br/>Celebrate Festivals & Events: Help organize devotional ceremonies, satsangs, and cultural events that strengthen community bonds.
-
-            <br/>Serve the Community: Assist charitable activities such as food distribution, education, and health services for those in need.
-
-            Every offering, big or small, is an act of devotion and service. By giving Dakshina, you participate in the spiritual energy of the temple and contribute to the wellbeing of others.
-          </p>
+          
         </Col>
 
         <Col sm={12} md={6} data-aos="fade-left">  
