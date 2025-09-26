@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import Event1 from '../assets/Images/event1.jpg';
-import Event2 from '../assets/Images/Event2.jpg';
+import Event2 from '../assets/Images/event2.jpg';
 import Event3 from '../assets/Images/event3.jpg';
 import Event4 from '../assets/Images/event4.jpg';
 import { Link } from 'react-router-dom';
