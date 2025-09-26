@@ -6,7 +6,7 @@ import Footer from '../Components/Footer';
 import { Link} from "react-router-dom";
 
 import Image1 from '../assets/Images/event1.jpg';
-import Image2 from '../assets/Images/Event2.jpg';
+import Image2 from '../assets/Images/event2.jpg';
 import Image3 from '../assets/Images/event3.jpg';
 import Image4 from '../assets/Images/event4.jpg';
 import Image5 from '../assets/Images/event5.jpg';
